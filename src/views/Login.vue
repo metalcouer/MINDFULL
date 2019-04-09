@@ -1,20 +1,10 @@
 <template>
-  <div class="home">
-    <br>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld style="color: #DEFFFC" msg="Just Breathe."/>
-    <br>
-    <br>
-    <div id="log">
-    <h4 style="color:#DEFFFC">Log In</h4><br>
-    <div class=container>
-      <div class=row>
-        <div class=col justify-content-center>
-        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
-          <b-form-group style="color:whitesmoke"
-                    width= "50px"
+  <div id="log">
+    <h1 style="color:whitesmoke">Log In</h1>
+    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+      <b-form-group style="color:whitesmoke"
                     id="usernameGroup"
-                    label=""
+                    label="Username:"
                     label-for="exampleInput1">
         <b-form-input id="username"
                       type="text"
@@ -22,9 +12,9 @@
                       required
                       placeholder="Enter username">
         </b-form-input>
-      <br>
+       <br>
       <b-form-group id="passwordGroup"
-                    label=""
+                    label="Password:"
                     label-for="exampleInput2">
         <b-form-input id="password"
                       type="text"
@@ -34,30 +24,17 @@
         </b-form-input>
       </b-form-group>
       </b-form-group>
-        </b-form><br>
-        <b-button class="mr-3" type="reset" variant="outline-light">Create Profile</b-button>
-        <b-button class="ml-3" type="submit" variant="outline-light">Submit</b-button>
-      
+      <b-button type="submit" variant="outline-light">Submit</b-button>
+      <b-button type="reset" variant="outline-light">Reset</b-button>
+      <br>
+      <br>
+       <b-button variant="light">Create Profile</b-button>
     </b-form>
-      </div>
-    </div>
-    </div>
   </div>
-  </div>
-  
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-
 export default {
-  name: 'home',
-  components: {
-    HelloWorld,
-  },
-
-
   data() {
     return {
       form: {
@@ -101,11 +78,5 @@ export default {
 </script>
 
 <style scoped>
-.container{
-  display:flex;
-  justify-content: center
-}
-b-button{
-  padding:30px
-}
+
 </style>

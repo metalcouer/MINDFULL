@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
+import Login from './views/Login.vue'
+import All from './views/All.vue'
+import Saved from './views/Saved.vue'
 
 Vue.use(Router);
 
@@ -10,6 +13,24 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home,
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login,
+      props: true
+    },
+    {
+      path: '/all',
+      name: 'all',
+      component: All,
+      props: true
+    },
+    {
+      path: '/saved',
+      name: 'saved',
+      component: Saved,
+      props: true
     },
     {
       path: '/about',

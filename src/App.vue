@@ -1,8 +1,17 @@
 <template>
   <div id="app">
+    <div class="container">
+    <div class="row">
+      <h1 class="logo">MindFULL</h1>
+      
+      </div>
+      </div>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Home</router-link> | |
+      <router-link to="/about">Get Started</router-link> | |
+      <router-link to="/all">Stretches</router-link> | |
+      <router-link to="/saved">Saved</router-link>
+
     </div>
     <router-view/>
   </div>
@@ -16,13 +25,19 @@
   text-align: center;
   color: #2c3e50;
 }
+.logo {
+  display:flex;
+  justify-content: flex-start;
+  color: #DEFFFC;
+  padding: 15px;
+  
+}
 #nav {
-  padding: 30px;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color:#DEFFFC;
     &.router-link-exact-active {
-      color: #42b983;
+      color:  #9E788F 
     }
   }
 }
