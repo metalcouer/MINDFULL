@@ -9,7 +9,7 @@
         <img alt="hand" src="../assets/hand.png"> 
         <img alt="arm" src="../assets/arm.png">  
         <img alt="shoulder" src="../assets/shoulder.png">
-        <img alt="neck" src="../assets/neck.png">
+        <img alt="neck" src="../assets/hand.png">
         </div>
       </div>
     </div>

@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <div class="container">
-    <div class="row">
-      <h1 class="logo">MindFULL</h1>
-      
-      </div>
-      </div>
-    <div id="nav">
-      <router-link to="/">Home</router-link> | |
-      <router-link to="/about">Get Started</router-link> | |
-      <router-link to="/all">Stretches</router-link> | |
-      <router-link to="/saved">Saved</router-link>
+    <div>
+  <b-navbar id="nav" toggleable="lg" type="light" >
+    <b-navbar-brand router-link to="/">MindFULL</b-navbar-brand>
 
+    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+    <b-collapse id="nav-collapse" is-nav>
+      <b-navbar-nav>
+        <b-nav-item router-link to="/about">Get Started</b-nav-item>
+        <b-nav-item router-link to="/all"> All Stretches</b-nav-item>
+        <b-nav-item router-link to="/saved">Profile</b-nav-item>
+        <b-nav-item href="#" disabled>Sign Out</b-nav-item>
+      </b-navbar-nav>
+
+   
+    </b-collapse>
+  </b-navbar>
+</div>
+    <div >
+      
     </div>
     <router-view/>
   </div>
@@ -35,10 +43,17 @@
 #nav {
   a {
     font-weight: bold;
+    background-color:#320E3B;
     color:#DEFFFC;
     &.router-link-exact-active {
       color:  #9E788F 
     }
   }
+#navbar {
+  background-color:#320E3B;
+}
+b-navbar{
+  display:none
+}
 }
 </style>

@@ -2,10 +2,12 @@
   <div class="home">
     <br>
     <img alt="Vue logo" src="../assets/logo.png">
+    <br>
+    <br>
+    <br>
     <HelloWorld style="color: #DEFFFC" msg="Just Breathe."/>
-    <br>
-    <br>
     <div id="log">
+    <br>
     <h4 style="color:#DEFFFC">Log In</h4><br>
     <div class=container>
       <div class=row>
