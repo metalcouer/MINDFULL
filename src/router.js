@@ -18,19 +18,21 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: Login,
-      props: true
     },
     {
       path: '/all',
       name: 'all',
       component: All,
-      props: true
     },
     {
       path: '/saved',
       name: 'saved',
       component: Saved,
-      props: true
+    },
+    {
+      path: '/stretchRec/:id',
+      name: 'stretchRec',
+      component: () =>import('./components/stretchRec')
     },
     {
       path: '/about',

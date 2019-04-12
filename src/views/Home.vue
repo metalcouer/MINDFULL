@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <br>
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="assets/logo.png">
     <br>
     <br>
     <br>
@@ -37,9 +37,12 @@
       </b-form-group>
       </b-form-group>
         </b-form><br>
-        <b-button class="mr-3" type="reset" variant="outline-light">Create Profile</b-button>
+        
+            <b-button class="mr-3" type="reset" variant="outline-light">Create Profile</b-button>
+           
+        <router-link :to="{path: '/About'}">
         <b-button class="ml-3" type="submit" variant="outline-light">Submit</b-button>
-      
+         </router-link>
     </b-form>
       </div>
     </div>
